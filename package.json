@@ -56,5 +56,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react-rui": "^0.1.0"
+  }
 }

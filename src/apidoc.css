@@ -1,0 +1,540 @@
+
+.toc {
+	display: flex;
+}
+
+.arrow {}
+
+.toc_wrapper {
+	min-width: 256px;
+	background: #222;
+	padding: 8px;
+	border: 1px solid #444;
+}
+
+	.toc_title {
+		font-size: 14pt;
+		padding: 4px;
+		border-bottom: 1px solid #444;
+		font-variant: small-caps;
+	}
+
+	.toc_body {
+		padding: 4px;
+	}
+
+		.toc_entry {
+			display: block;
+			padding: 2px;
+		}
+
+
+.endpoint_title {
+	font-size: 24pt;
+	font-weight: 100;
+	padding: 8px 0;
+	margin: 0.5em 0;
+	border-bottom: 1px solid #555;
+	display: flex;
+}
+
+.endpoint_meta {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.endpoint_top {
+	font-size: 12pt;
+	align-self: center;
+}
+
+.padded_wrapper {
+	padding-left: 16px;
+}
+
+.note {
+	margin: 0.5em 0;
+	color: #bbb;
+}
+
+	.endpoint_action {
+		color: white;
+		margin-right: 0.25em;
+	}
+
+	.endpoint_path {
+		margin: 0 0.125em;
+		margin-right: 0.25em;
+		color: #999;
+	}
+
+
+
+	.endpoint_method {
+		margin: 0 0.125em;
+	}
+
+		.endpoint_method_get {
+			color: #8cf;
+		}
+
+		.endpoint_method_post {
+			color: #8f8;
+		}
+
+		.endpoint_method_put {
+			color: #f8f;
+		}
+
+		.endpoint_method_delete {
+			color: #f88;
+		}
+
+.endpoint_body {
+
+}
+
+
+.request_title {
+	font-size: 18pt;
+	font-weight: 100;
+}
+
+.request_body {
+	padding-left: 16px;
+}
+
+.response_title {
+	font-size: 18pt;
+	font-weight: 100;
+}
+
+	.response_path, .request_path {
+		display: inline-block;
+	}
+
+	.response_desc {
+		display: inline-block;
+		color: #aaa;
+		margin-left: 0.5em;
+	}
+
+	.response_code, .request_code {
+		margin-left: 0.5em;
+		display: inline-block;
+	}
+
+
+
+	.response_code_success {
+		color: #8f8;
+	}
+
+	.response_code_failure {
+		color: #f88;
+	}
+
+.response_body {
+	padding-left: 32px;
+}
+
+.request_title, .response_title, .headers_title, .body_title, .params_title {
+	padding: 0.5em 0;
+	display: flex;
+}
+
+.request_path, .response_path, .headers_path, .body_path, .params_path {
+	cursor: pointer;
+}
+
+.headers_title, .body_title, .params_title {
+	font-size: 14pt;
+}
+
+.endpoint_body, .request_body, .reseponse_body, .headers_body, .body_body, .params_body {
+	padding-left: 32px;
+
+}
+
+.samplemaker_root {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	min-width: 960px;
+}
+
+.samplemaker_inputs {
+	flex: 0 0 60%;
+	overflow-y: scroll;
+	height: 100%;
+	padding: 0px 4px;
+	padding-bottom: 64px;
+}
+
+.samplemaker_sample {
+	flex: 0 0 40%;
+	overflow-y: scroll;
+	height: 100%;
+	padding: 0px 4px;
+}
+
+
+
+
+
+
+.entry {
+	border-bottom: 1px solid #444;
+	flex-wrap: nowrap;
+}
+
+.overview {
+	display: flex;
+	padding: 4px;
+	margin: 4px;
+	color: #ddd;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+
+.name {
+	flex: 0 0 auto;
+	width: 210px;
+	color: white;
+	font-family: monospace;
+}
+
+.orOptions {
+	display: flex;
+	margin: 6px 4px;
+	margin-left: 1em;
+	flex-wrap: nowrap;
+}
+	.orOptions > .label {
+		display: flex;
+		font-weight: bold;
+		padding: 4px;
+		align-self: stretch;
+		align-items: center;
+		border-right: 1px solid #333;
+		background: #333;
+		justify-content: center;
+		font-variant: small-caps;
+	}
+
+.mapOptions {
+	display: flex;
+	margin: 0px 4px;
+	margin-left: 1em;
+	flex-wrap: nowrap;
+}
+	.mapOptions > .label {
+		display: flex;
+		padding: 2px;
+		font-weight: bold;
+		align-self: stretch;
+		align-items: center;
+		border-right: 1px solid #333;
+		background: #333;
+		width: 64px;
+		justify-content: center;
+		font-variant: small-caps;
+	}
+
+.typeguide {
+	max-width: 640px;
+}
+
+.type {
+	width: 120px;
+	flex: 0 0 auto;
+}
+
+.info {
+	min-width: 600px;
+	width: auto;
+	padding: 0 8px;
+}
+
+	.desc {
+		-webkit-user-select: text; /* Safari 3.1+ */
+		-moz-user-select: text; /* Firefox 2+ */
+		-ms-user-select: text; /* IE 10+ */
+		user-select: text; /* Standard syntax */
+	}
+
+	.param {
+		margin: 6px 0;
+		margin-left: 1em;
+	}
+
+	.param .label {
+		color: #69c;
+	}
+
+	.param .value {
+		color: #aaa;
+		font-family: monospace;
+		-webkit-user-select: text; /* Safari 3.1+ */
+		-moz-user-select: text; /* Firefox 2+ */
+		-ms-user-select: text; /* IE 10+ */
+		user-select: text; /* Standard syntax */
+	}
+
+	.sub {
+		margin: 6px 0;
+		margin-left: 2em;
+		color: #8cf;
+	}
+
+	.content {
+		margin-left: 2em;
+	}
+
+
+
+	.example {
+		font-family: monospace;
+		color: #aaa;
+		font-style: italic;
+		margin: 12px 0;
+		margin-left: 1em;
+	}
+
+.type  .typeFlag {
+	text-align: center;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	font-variant: small-caps;
+	cursor: pointer;
+	background: #333;
+
+}
+
+.type .typeFlagPrm {  }
+.type .typeFlagCol { background: #345; }
+.type .typeFlagExt { background: #354; }
+.type .typeFlagLit {  }
+.type .typeFlagMta {  }
+.type .typeFlagNul { background: #733; }
+
+.literalVal {
+	display: inline-block;
+	padding: 4px 0px;
+	font-family: monospace;
+	color: #fff;
+}
+
+.type .requiredFlag {
+	background: #c00;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.type .optionalFlag {
+	font-variant: small-caps;
+	background: #06c;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+}
+.type .readonlyFlag {
+	font-variant: small-caps;
+	background: #a72;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.type .conditionFlag {
+	font-variant: small-caps;
+	background: #07a;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.type .conditionFlag:not([title='']) {
+	cursor: help;
+}
+.type .nullableFlag {
+	font-variant: small-caps;
+	background: #600;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+}
+.type .nullableFlag:not([title='']) {
+	cursor: help;
+}
+.type .emptiableFlag {
+	font-variant: small-caps;
+	background: #600;
+	color: white;
+	padding: 2px 4px;
+	margin: 4px;
+	margin-top: 0;
+	border-radius: 3px;
+	text-align: center;
+}
+.type .emptiableFlag:not([title='']) {
+	cursor: help;
+}
+
+.popup {
+	color: #fc3;
+	cursor: pointer;
+}
+
+.popup:hover {
+	color: white;
+}
+
+.sample_body, .sample {
+	font-size: 10pt;
+	line-height: 1.2;
+	font-family: monospace;
+	padding: 16px;
+	margin: 24px;
+	background: #222;
+	white-space: pre-wrap;
+	border: 1px solid #444;
+}
+
+.sample_paramsymbol {
+	color: #888;
+}
+
+.sample_paramname {
+	color: #8cf;
+}
+
+.sample_paramvalue {
+	color: #fff;
+}
+
+.samplemaker_input_wrapper {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+
+.samplemaker_input_label {
+	flex: 0 1 210px;
+	border-bottom: 1px solid #444;
+	padding-left: 4px;
+	padding-top: 8px;
+	align-self: flex-start;
+}
+
+.samplemaker_input_children {
+	box-sizing: content-box;
+	padding: 2px;
+	padding-right: 0px;
+	margin-left: 8px;
+	padding-left: 8px;
+	border-left: 2px solid #444;
+	flex-basis: 100%;
+}
+
+.samplemaker_input_options {
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: nowrap;
+}
+
+.samplemaker_input_optioneach {
+	display: flex;
+	align-self: stretch;
+	flex: 1 1 auto;
+}
+
+.samplemaker_input_nester {
+	display: flex;
+	align-self: stretch;
+	flex: 1 1 auto;
+	flex-direction:column;
+	padding: 2px;
+	padding-right: 0px;
+	margin-left: 8px;
+	padding-left: 8px;
+	border-left: 2px solid #444;
+	margin-bottom: 4px;
+	align-items: stretch;
+}
+
+.samplemaker_input_nested {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	align-items:stretch;
+}
+
+.samplemaker_input_optionlabel {
+	align-self: center;
+	padding: 2px;
+}
+
+.samplemaker_input_keyvalue {
+	display: flex;
+	align-self: stretch;
+}
+
+.samplemaker_input_key {
+	flex: 0 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.samplemaker_input_value {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.samplemaker_input_kvopt {
+
+}
+
+.samplemaker_input_kvchild {
+
+}
+
+
+.sample_title {
+	padding: 0.5em 0;
+	display: flex;
+	padding-left: 32px;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.sample_title > .arrow {
+	padding-right: 0.25em;
+}
+
+.body_options {
+	padding: 0.5em;
+	background: #222;
+	margin-left: 2em;
+}

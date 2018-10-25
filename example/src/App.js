@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-rapidoc'
+import ApiDoc from 'react-rapidoc'
+
+import styles from './index.css';
 
 export default class App extends Component {
   render () {
+	console.log(styles);
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
+      <div className='wrapper'>
+		  <div className='main'>
+			<ApiDoc.Contents>
+				<ApiDoc.Endpoint method='GET' path='/documents/orders/(documentId)' action='Get Order'>
+					
+				</ApiDoc.Endpoint>
+			</ApiDoc.Contents>
+		  </div>
       </div>
     )
   }
