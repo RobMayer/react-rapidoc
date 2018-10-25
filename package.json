@@ -1,7 +1,7 @@
 {
   "name": "react-rapidoc",
-  "version": "1.0.0",
-  "description": "a set of components for laying out documentation for an API doc",
+  "version": "0.1.0",
+  "description": "a set of components for laying out documentation for a JSON rest API",
   "author": "RobMayer",
   "license": "MIT",
   "repository": "RobMayer/react-rapidoc",
